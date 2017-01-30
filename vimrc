@@ -1,8 +1,13 @@
 " My configuration file for vim
 
 " Plugin settings, e.g., NERDTree
+" mkdir -p ~/.vim/autoload ~/.vim/bundle
+" curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+" cd ~/.vim/bundle                                                                             
+" git clone https://github.com/scrooloose/nerdtree.git   
+"
 " execute pathogen#infect()
-
+"
 " Basic settings
 setlocal noswapfile " 不要生成swap文件
 set bufhidden=hide " 当buffer被丢弃的时候隐藏它
