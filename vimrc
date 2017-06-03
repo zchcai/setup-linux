@@ -3,7 +3,7 @@
 " Plugin settings, e.g., NERDTree
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-" cd ~/.vim/bundle                                                                             
+" cd ~/.vim/bundle
 " git clone https://github.com/scrooloose/nerdtree.git   
 "
 " execute pathogen#infect()
@@ -38,9 +38,12 @@ set smartindent " 开启新行时使用智能自动缩进
 set backspace=indent,eol,start " 不设定在插入状态无法用退格键和 Delete 键删除回车符
 set cmdheight=1 " 设定命令行的行数为 1
 set laststatus=2 " 显示状态栏 (默认值为 1, 无法显示状态栏)
-set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ Ln\ %l,\ Col\ %c/%L%) " 设置在状态行显示的信息
+" 设置在状态行显示的信息
+set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ Ln\ %l,\ Col\ %c/%L%)
 set foldenable " 开始折叠
 set foldmethod=syntax " 设置语法折叠
 set foldcolumn=0 " 设置折叠区域的宽度
 setlocal foldlevel=1 " 设置折叠层数为 1
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR> " 用空格键来开关折叠
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929 
+match OverLength /\%81v.\+/
