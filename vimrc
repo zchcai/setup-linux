@@ -6,7 +6,7 @@
 " cd ~/.vim/bundle
 " git clone https://github.com/scrooloose/nerdtree.git   
 "
-" execute pathogen#infect()
+execute pathogen#infect()
 "
 " Basic settings
 setlocal noswapfile " 不要生成swap文件
