@@ -6,6 +6,8 @@
 " cd ~/.vim/bundle
 " git clone https://github.com/scrooloose/nerdtree.git   
 "
+" Solidity Highlight
+" git clone https://github.com/tomlion/vim-solidity.git ~/.vim/bundle/vim-solidity
 execute pathogen#infect()
 "
 " Basic settings
