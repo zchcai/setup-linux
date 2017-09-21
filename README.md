@@ -32,8 +32,9 @@ sh install.sh
 Configuration - CentOS:
 ```
 sudo yum update
-sudo yum install vim git tmux curl
+sudo yum install vim git curl
 git clone https://github.com/taxic/Test.git
 cd Test
+sh centos-tmux-install.sh   # install tmux first
 sh install.sh
 ```
