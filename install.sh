@@ -29,8 +29,12 @@ if [ ! -d ~/.vim/bundle ]; then
 fi
 
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-cd ~/.vim/bundle
-git clone https://github.com/scrooloose/nerdtree.git 
+
+# Add NerdTree
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 
 # Add Solidity Source Code Highlight
 git clone https://github.com/tomlion/vim-solidity.git ~/.vim/bundle/vim-solidity
+
+# Add Python auto-complete
+git clone --recursive https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
