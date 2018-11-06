@@ -1,13 +1,20 @@
 " My configuration file for vim
 
-" Plugin settings, e.g., NERDTree
+" Plugin settings - Bundle - Initialize
+"
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-" cd ~/.vim/bundle
-" git clone https://github.com/scrooloose/nerdtree.git   
+" 
+" Add plugin
+"
+" NERDTree 
+" git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 "
 " Solidity Highlight
 " git clone https://github.com/tomlion/vim-solidity.git ~/.vim/bundle/vim-solidity
+"
+" Python auto complete
+" git clone --recursive https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
 execute pathogen#infect()
 "
 " Basic settings
