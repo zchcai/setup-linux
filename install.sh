@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This scripts should run inside <Path to Test>
+
 # Before you run the bash code, make sure you have installed:
 # vim tmux git curl ...
 # For Ubuntu users:
@@ -13,6 +15,15 @@ fi
 if ! cmp ~/.vimrc ./vimrc >/dev/null 2>&1
 then
 	cp ./vimrc ~/.vimrc
+fi
+
+# Add gitconfig
+if [ ! -f ~/.gitconfig ]; then
+	cp ./gitconfig ~/.gitconfig
+fi
+if ! cmp ~/.gitconfig ./gitconfig > /dev/null 2>&1
+then
+	cp ./gitconfig ~/.gitconfig
 fi
 
 # Add tmux.conf

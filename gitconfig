@@ -1,0 +1,41 @@
+[alias]
+	aa = add -A .
+	af = add -f
+    br = branch
+    brd = branch -d
+    brD = branch -D
+    ci = commit
+    co = checkout
+    cob = checkout -b
+    dt = difftool
+    dts = difftool --staged
+    df = diff
+    dfs = diff --staged
+    lg = log -p
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+	lolar = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local --reflog
+	plo = pull origin
+	plod = pull origin dev
+	plos = pull origin staging
+	plom = pull origin master
+	ploh = pull origin HEAD
+	st = status
+    std = status .
+    unstage = reset HEAD
+
+    # Show files ignored by git:
+    ign = ls-files -o -i --exclude-standard
+
+[core]
+    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    editor = vim
+[diff]
+    tool = vimdiff
+[merge]
+    tool = vimdiff
+[user]
+    email = zhicheng@cs.wisc.edu
+    name = Zhicheng Cai
