@@ -18,6 +18,7 @@
 execute pathogen#infect()
 "
 " Basic settings
+set mouse=a   " enable mouse mode
 setlocal noswapfile " 不要生成swap文件
 set bufhidden=hide " 当buffer被丢弃的时候隐藏它
 set nocompatible " 关闭 vi 兼容模式
