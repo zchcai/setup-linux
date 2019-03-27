@@ -24,12 +24,13 @@ set bufhidden=hide " 当buffer被丢弃的时候隐藏它
 set nocompatible " 关闭 vi 兼容模式
 syntax on " 自动语法高亮
 colorscheme evening " 设定配色方案
-set number " 显示行号
+set number " show line number
 " set cursorline " 突出显示当前行
 set ruler " 打开状态栏标尺
-set shiftwidth=4 " 设定 << 和 >> 命令移动时的宽度为 4
 set softtabstop=4 " 使得按退格键时可以一次删掉 4 个空格
-set tabstop=4 " 设定 tab 长度为 4
+set tabstop=4 " show existing tab with 4 spaces width
+set shiftwidth=4 " when indenting with '>', use 4 spaces width
+set expandtab " On pressing tab, insert 4 spaces
 set nobackup " 覆盖文件时不备份
 set autochdir " 自动切换当前目录为当前文件所在的目录
 filetype plugin indent on " 开启插件
