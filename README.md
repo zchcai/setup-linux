@@ -1,4 +1,4 @@
-# Test
+# my-scripts
 For initial settings on Linux.
 
 ## Basic Usage
@@ -24,17 +24,17 @@ xxx   ALL=(ALL)   ALL
 Configuration - Ubuntu:
 ```
 sudo apt-get update
-sudo apt-get install vim git tmux curl
-git clone https://github.com/taxic/Test.git
-cd Test
+sudo apt-get install vim git tmux curl xclip
+git clone https://github.com/zchcai/my-scripts.git
+cd my-scripts
 sh install.sh
 ```
 Configuration - CentOS:
 ```
 sudo yum update
-sudo yum install vim git curl
-git clone https://github.com/taxic/Test.git
-cd Test
+sudo yum install vim git curl xclip
+git clone https://github.com/zchcai/my-scripts.git
+cd my-scripts
 sh centos-tmux-install.sh   # install tmux first
 sh install.sh
 ```
