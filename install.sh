@@ -49,3 +49,7 @@ git clone https://github.com/tomlion/vim-solidity.git ~/.vim/bundle/vim-solidity
 
 # Add Python auto-complete
 git clone --recursive https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
+
+# git password cache
+$ git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
